@@ -12,7 +12,9 @@ public class TextMsgExpander {
         System.out.println("");
 
         // Check for abbreviations
-       
+       if (userLine.indexOf("BFF") > -1) {
+           userLine = userLine.replace("BFF", "best friends forever");
+       }
 
         // Output expanded text
         System.out.println("");
